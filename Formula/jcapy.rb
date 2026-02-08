@@ -6,8 +6,8 @@ class Jcapy < Formula
 
   desc "JCapy CLI - One-Army Orchestrator for developers"
   homepage "https://github.com/ponli550/JCapy"
-  url "https://github.com/ponli550/JCapy/archive/refs/tags/v1.1.8.tar.gz"
-  sha256 "0" * 64  # Placeholder - will be updated on first release
+  url "https://github.com/ponli550/JCapy/archive/refs/tags/v2.0.0.tar.gz"
+  sha256 "32532db464aee5a4c690a72e67d401f8f71052e1d6cdb9e05885332a91b26c09"
   license "MIT"
   head "https://github.com/ponli550/JCapy.git", branch: "main"
 
@@ -40,10 +40,8 @@ class Jcapy < Formula
     # Install dependencies
     venv.pip_install resources
 
-    # Install jcapy from src layout
-    cd "jcapy" do
-      venv.pip_install buildpath/"jcapy"
-    end
+    # Install jcapy package
+    venv.pip_install buildpath
 
     # Create bin symlink
     bin.install_symlink libexec/"bin/jcapy"
