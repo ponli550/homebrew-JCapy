@@ -7,8 +7,9 @@ class Jcapy < Formula
   desc "JCapy CLI - One-Army Orchestrator for developers"
   homepage "https://github.com/ponli550/JCapy"
   url "https://github.com/ponli550/JCapy/archive/refs/tags/v1.1.8.tar.gz"
-  sha256 "PLACEHOLDER_SHA256"
+  sha256 "0" * 64  # Placeholder - will be updated on first release
   license "MIT"
+  head "https://github.com/ponli550/JCapy.git", branch: "main"
 
   depends_on "python@3.11"
 
@@ -33,17 +34,22 @@ class Jcapy < Formula
   end
 
   def install
-    # Install from src layout
-    virtualenv_install_with_resources
+    # Install into virtualenv
+    venv = virtualenv_create(libexec, "python3.11")
 
-    # Create wrapper script that sets PYTHONPATH
-    bin.install "src/jcapy" => "jcapy-core"
+    # Install dependencies
+    venv.pip_install resources
 
-    # Actually just install the package properly
-    system "#{libexec}/bin/pip", "install", "--no-deps", "-e", "jcapy"
+    # Install jcapy from src layout
+    cd "jcapy" do
+      venv.pip_install buildpath/"jcapy"
+    end
+
+    # Create bin symlink
+    bin.install_symlink libexec/"bin/jcapy"
   end
 
   test do
-    system "#{bin}/jcapy", "--version"
+    assert_match "jcapy", shell_output("#{bin}/jcapy help")
   end
 end
