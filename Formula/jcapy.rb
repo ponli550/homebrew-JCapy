@@ -37,8 +37,10 @@ class Jcapy < Formula
     # Install into virtualenv
     venv = virtualenv_create(libexec, "python3.11")
 
-    # Install dependencies
-    venv.pip_install resources
+    # Install dependencies via pip (more reliable than resources)
+    venv.pip_install "rich>=13.0.0"
+    venv.pip_install "pygments"
+    venv.pip_install "markdown-it-py"
 
     # Install jcapy package
     venv.pip_install buildpath
