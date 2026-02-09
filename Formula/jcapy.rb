@@ -7,15 +7,15 @@ class Jcapy < Formula
   desc "JCapy CLI - One-Army Orchestrator for developers"
   homepage "https://github.com/ponli550/JCapy"
   url "https://github.com/ponli550/JCapy/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "32532db464aee5a4c690a72e67d401f8f71052e1d6cdb9e05885332a91b26c09"
+  sha256 "63454cf040d4b89589092c166db8afc996f35e7c164260ea637ac1e57e52b922"
   license "MIT"
   head "https://github.com/ponli550/JCapy.git", branch: "main"
 
   depends_on "python@3.11"
 
   resource "rich" do
-    url "https://files.pythonhosted.org/packages/0d/54/37a0e9ef0adbe1a8c681fb6c37afe4e7c6f7ee9b8e56e7bf78be89a91c6e/rich-13.9.4.tar.gz"
-    sha256 "439594978a49a09530cff7ebc4b5c7103ef57c5a3ef3a8a5ffd9d8361c4a8cc7"
+    url "https://files.pythonhosted.org/packages/74/99/a4cab2acbb884f80e558b0771e97e21e939c5dfb460f488d19df485e8298/rich-14.3.2.tar.gz"
+    sha256 "e712f11c1a562a11843306f5ed999475f09ac31ffb64281f73ab29ffdda8b3b8"
   end
 
   resource "markdown-it-py" do
@@ -29,8 +29,8 @@ class Jcapy < Formula
   end
 
   resource "pygments" do
-    url "https://files.pythonhosted.org/packages/7c/2d/c3338d48ea6cc0feb8446d8e6937e1408088a72a2e8a3a7a7bf7d4a53f7c/pygments-2.18.0.tar.gz"
-    sha256 "786ff802f32e91311bff3889f6e9a86e81505fe99f2735bb6d60ae0c5004f199"
+    url "https://files.pythonhosted.org/packages/b0/77/a5b8c569bf593b0140bde72ea885a803b82086995367bf2037de0159d924/pygments-2.19.2.tar.gz"
+    sha256 "636cb2477cec7f8952536970bc533bc43743542f70392ae026374600add5b887"
   end
 
   def install
