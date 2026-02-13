@@ -6,31 +6,31 @@ class Jcapy < Formula
 
   desc "JCapy CLI - One-Army Orchestrator for developers"
   homepage "https://github.com/ponli550/JCapy"
-  url "https://github.com/ponli550/JCapy/archive/refs/tags/v3.1.0.tar.gz"
-  sha256 "73a192aa283a7907b037117ba3e52ae0293c14429f6820ba936b986bd025fa88"
+  url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.0.0.tar.gz"
+  sha256 "f061e936dec1b93c66ae68392a180550b68f649436796ad7c59134c21d7a0e6b"
   license "MIT"
   head "https://github.com/ponli550/JCapy.git", branch: "main"
 
   depends_on "python@3.11"
 
   resource "rich" do
-    url "https://github.com/ponli550/JCapy/archive/refs/tags/v3.1.0.tar.gz"
-    sha256 "73a192aa283a7907b037117ba3e52ae0293c14429f6820ba936b986bd025fa88"
+    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.0.0.tar.gz"
+    sha256 "f061e936dec1b93c66ae68392a180550b68f649436796ad7c59134c21d7a0e6b"
   end
 
   resource "markdown-it-py" do
-    url "https://github.com/ponli550/JCapy/archive/refs/tags/v3.1.0.tar.gz"
-    sha256 "73a192aa283a7907b037117ba3e52ae0293c14429f6820ba936b986bd025fa88"
+    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.0.0.tar.gz"
+    sha256 "f061e936dec1b93c66ae68392a180550b68f649436796ad7c59134c21d7a0e6b"
   end
 
   resource "mdurl" do
-    url "https://github.com/ponli550/JCapy/archive/refs/tags/v3.1.0.tar.gz"
-    sha256 "73a192aa283a7907b037117ba3e52ae0293c14429f6820ba936b986bd025fa88"
+    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.0.0.tar.gz"
+    sha256 "f061e936dec1b93c66ae68392a180550b68f649436796ad7c59134c21d7a0e6b"
   end
 
   resource "pygments" do
-    url "https://github.com/ponli550/JCapy/archive/refs/tags/v3.1.0.tar.gz"
-    sha256 "73a192aa283a7907b037117ba3e52ae0293c14429f6820ba936b986bd025fa88"
+    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.0.0.tar.gz"
+    sha256 "f061e936dec1b93c66ae68392a180550b68f649436796ad7c59134c21d7a0e6b"
   end
 
   def install
