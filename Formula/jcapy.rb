@@ -14,23 +14,23 @@ class Jcapy < Formula
   depends_on "python@3.11"
 
   resource "rich" do
-    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.4.tar.gz"
-    sha256 "91073691df938736e84541288e8aabe9749c76570d8c17f5214340d201750b15"
+    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.5.tar.gz"
+    sha256 "1e99ecf63c40339fe8ce47045df66ef32c3e99910824ae3da21ab3681cadb777"
   end
 
   resource "markdown-it-py" do
-    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.4.tar.gz"
-    sha256 "91073691df938736e84541288e8aabe9749c76570d8c17f5214340d201750b15"
+    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.5.tar.gz"
+    sha256 "1e99ecf63c40339fe8ce47045df66ef32c3e99910824ae3da21ab3681cadb777"
   end
 
   resource "mdurl" do
-    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.4.tar.gz"
-    sha256 "91073691df938736e84541288e8aabe9749c76570d8c17f5214340d201750b15"
+    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.5.tar.gz"
+    sha256 "1e99ecf63c40339fe8ce47045df66ef32c3e99910824ae3da21ab3681cadb777"
   end
 
   resource "pygments" do
-    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.4.tar.gz"
-    sha256 "91073691df938736e84541288e8aabe9749c76570d8c17f5214340d201750b15"
+    url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.5.tar.gz"
+    sha256 "1e99ecf63c40339fe8ce47045df66ef32c3e99910824ae3da21ab3681cadb777"
   end
 
         def install
