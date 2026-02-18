@@ -6,8 +6,8 @@ class Jcapy < Formula
 
   desc "JCapy CLI - One-Army Orchestrator for developers"
   homepage "https://github.com/ponli550/JCapy"
-  url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.6.tar.gz"
-  sha256 "cbd468f97258d9689e136d3887b558940c0d404596859fbdbcfc7b1748bbf17b"
+  url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.7.tar.gz"
+  sha256 "38797fe2168ff77f448b98775ffb690b05572892057ee8458612d5d5fce43c25"
   license "MIT"
   head "https://github.com/ponli550/JCapy.git", branch: "main"
 
@@ -33,7 +33,7 @@ class Jcapy < Formula
     sha256 "1e99ecf63c40339fe8ce47045df66ef32c3e99910824ae3da21ab3681cadb777"
   end
 
-          def install
+            def install
     # Install into virtualenv
     venv = virtualenv_create(libexec, "python3.11")
 
