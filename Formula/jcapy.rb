@@ -6,8 +6,8 @@ class Jcapy < Formula
 
   desc "JCapy CLI - One-Army Orchestrator for developers"
   homepage "https://github.com/ponli550/JCapy"
-  url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.5.tar.gz"
-  sha256 "1e99ecf63c40339fe8ce47045df66ef32c3e99910824ae3da21ab3681cadb777"
+  url "https://github.com/ponli550/JCapy/archive/refs/tags/v4.1.6.tar.gz"
+  sha256 "cbd468f97258d9689e136d3887b558940c0d404596859fbdbcfc7b1748bbf17b"
   license "MIT"
   head "https://github.com/ponli550/JCapy.git", branch: "main"
 
@@ -33,7 +33,7 @@ class Jcapy < Formula
     sha256 "1e99ecf63c40339fe8ce47045df66ef32c3e99910824ae3da21ab3681cadb777"
   end
 
-        def install
+          def install
     # Install into virtualenv
     venv = virtualenv_create(libexec, "python3.11")
 
@@ -44,6 +44,7 @@ class Jcapy < Formula
     venv.pip_install "posthog>=3.0.0"
     venv.pip_install "textual>=0.50.0"
     venv.pip_install "PyYAML>=6.0"
+    venv.pip_install "python-dotenv>=1.0.0"
 
     # Install jcapy package
     venv.pip_install buildpath
